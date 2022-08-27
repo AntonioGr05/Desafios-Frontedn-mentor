@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*----Primary-*/
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /*----Neutral--*/
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: var(--Cream);
+}
+/*- 343-612 -*/
+.card-product{
+    background-color: var(--White);
+    width: 343px;
+    height: 612px;
+    margin: 195px auto 80px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-product__cont-image{
+    width: 343px;
+    height: 240px;
+    border-radius: 14px 14px 0 0;
+    
+}
+.card-product__inf{
+    padding: 26px;
+}
+.card-prodcut__perfum{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+}
+.card-product__title__text{
+    font-family: 'Fraunces', sans-serif;
+    padding:16px 0px 17px 0px;
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--Very-dark-blue);
+}
+
+.card-product__description__text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--Dark-grayish-blue);
+    padding-bottom: 15px;
+}
+.card-product__prices{
+    display: flex;
+    flex-direction: row;
+}
+.card-product__prices__new{
+    font-size: 2em;
+    font-family: 'Fraunces', sans-serif;
+    color: var(--Dark-cyan);
+    padding-right: 20px;
+    font-weight: 700;
+}
+.card-product__prices__old{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    margin-top: 10px;
+    text-decoration: line-through;
+    padding-bottom: 20px;
+}
+.card-product__button{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 700;
+    
+}
