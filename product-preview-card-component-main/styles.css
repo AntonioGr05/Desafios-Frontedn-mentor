@@ -5,6 +5,7 @@
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    padding: 10px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -22,6 +23,7 @@
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
+    --Dark-cyan-active: hsl(163, 86%, 14%)
 }
 body{
     font-family: 'Fraunces', serif;
@@ -40,19 +42,20 @@ body{
     flex-direction: column;
 
 }
-
-.card-product__cont-image{
+.card-product__cont-image-mobile{
     width: 343px;
     height: 240px;
     border-radius: 14px 14px 0 0;
-    
+}
+.card-product__cont-image-desktop{
+    display: none;
 }
 .card-product__inf{
     padding: 26px;
 }
 .card-prodcut__perfum{
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 500;
     font-size: 14px;
     color: var(--Dark-grayish-blue);
@@ -65,7 +68,6 @@ body{
     font-size: 2em;
     color: var(--Very-dark-blue);
 }
-
 .card-product__description__text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -94,6 +96,10 @@ body{
     text-decoration: line-through;
     padding-bottom: 20px;
 }
+
+.card-product__button__image{
+    margin-right: 10px;
+}
 .card-product__button{
     width: 100%;
     height: 45px;
@@ -104,4 +110,35 @@ body{
     font-size: 14px;
     font-weight: 700;
     
+}
+.card-product__button:active{
+    background-color: var(--Dark-cyan-active);
+}
+.card-product__button:hover{
+    cursor: pointer;
+}
+
+@media  (min-width: 600px){
+    .card-product{
+        width: 600px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+    .card-product__cont-image-mobile{
+        display: none;
+    }
+    .card-product__cont-image-desktop{
+        width: 300px;
+        height: 100%;
+        border-radius: 14px 0px 0 14px;
+        display: flex;
+    }
+    .card-product__inf{
+        padding: 30px;
+    }
+    .card-prodcut__perfum{
+        letter-spacing: 4px;
+    }
+
 }
