@@ -1,0 +1,99 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 330 785 */
+:root{
+    --Verydarkblue: hsl(233, 47%, 7%); /* background */
+    --Darkdesaturatedblue: hsl(244, 38%, 16%); /* cardbackground */
+    --Softviolet: hsl(277, 64%, 61%);/* (accent) */
+    --violetrans:hsla(277, 79%, 30%, 0.505);
+
+    --White : hsl(0, 0%, 100%);/* (main heading, stats) */
+    --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75); /* (main paragraph */
+    --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
+}
+body{
+    background-color: var(--Verydarkblue);
+    color: var(--White);
+}
+.imagen{
+    background-image: url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.capa{
+    background-color: var(--violetrans);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    
+}
+main{
+    width: 330px;
+    height: 780px;
+    /* border: solid 1px white; */
+    background-color: var(--Darkdesaturatedblue);
+    margin: 80px auto 10px auto ;
+    /* padding: 0 40px 0 40px; */
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+.title{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 40px 30px 15px 30px;
+    text-align: center;
+}
+.resaltado{
+    color: var(--Softviolet);
+}
+.description{
+    color: var(--Slightlytransparentwhite);
+    /* font-size: 20px; */
+    margin: 0 40px;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.stats{
+    color: var(--Slightlytransparentwhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stats p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.cantidad{
+    font-family: 'Inter', sans-serif;
+    color: var(--White);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+}
