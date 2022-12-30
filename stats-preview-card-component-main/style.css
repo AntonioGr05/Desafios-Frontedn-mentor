@@ -97,3 +97,43 @@ main{
     margin-bottom: 5px;
     letter-spacing: 0;
 }
+
+@media (min-width:600px){
+
+    main{
+        width: 1110px;
+        height: 450px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .imagen{
+        width: 540px;
+        height: 100%;
+    }
+    .contenedorsec{
+        width: 570px;
+        padding: 80px 120px 60px 70px;
+        
+
+    }
+    .title{
+        font-size: 1.16rem;
+        margin: 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    .description{
+        margin-top: 30px;
+        text-align: start;
+        margin-left: 0;
+        /* font-size: 1.1rem; */
+    }
+    .stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+}
