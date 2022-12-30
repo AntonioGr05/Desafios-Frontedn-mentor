@@ -136,4 +136,7 @@ main{
         justify-content: space-between;
         margin-top: 70px;
     }
+    .imagen{
+        border-radius: 0 10px 10px 0;
+    }
 }
